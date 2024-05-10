@@ -230,26 +230,45 @@ header {
   @apply fixed bottom-5 bg-primary dark:bg-primary-dark inset-x-5 md:inset-x-10 lg:inset-x-20 p-2 max-h-20 h-full flex items-center justify-between rounded-xl text-xs text-black dark:text-white font-semibold;
 }
 
-.personal-container h3{
-  @apply text-[11px]
+.personal-container h3 {
+  @apply text-[11px];
 }
 
-.connect-wallet{
-  @apply text-black dark:text-white text-base w-full font-medium text-center px-4 py-3 border border-primary-dark dark:border-primary rounded-xl
+.connect-wallet {
+  @apply text-black dark:text-white text-base w-full font-medium text-center px-4 py-3 border border-primary-dark dark:border-primary rounded-xl;
 }
 
-.completed-banner{
-    background-image: url(../assets/lines.svg);
+.completed-banner {
+  background-image: url(../assets/lines.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  @apply container h-screen bg-white dark:bg-black ring-0 border-0 bg-blend-difference
+  @apply container h-screen bg-white dark:bg-black ring-0 border-0 bg-blend-difference;
 }
 
-.large-screen{
-  @apply max-w-3xl mx-auto
+.large-screen {
+  @apply max-w-3xl mx-auto;
 }
 
-.login-res-screen{
-  @apply  max-w-lg mx-auto
+.login-res-screen {
+  @apply max-w-lg mx-auto;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  font-size: 16px !important;
 }
