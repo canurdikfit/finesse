@@ -249,6 +249,7 @@ header {
 .large-screen{
   @apply max-w-3xl mx-auto
 }
+
 .login-res-screen{
   @apply  max-w-lg mx-auto
 }
