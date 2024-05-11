@@ -83,10 +83,10 @@ form {
 }
 
 .carousel-container-shell {
-  @apply dark:bg-primary-dark bg-black h-[600px] rounded-3xl flex flex-col justify-center pb-4 px-4;
+  @apply dark:bg-primary-dark bg-black h-[600px] md:h-[500px] rounded-3xl flex flex-col justify-center pb-4 px-4;
 }
 .carousel-container-img {
-  @apply relative object-contain mt-auto  mb-14;
+  @apply relative object-contain mt-auto mb-14;
 }
 
 .carousel-container-pagination {

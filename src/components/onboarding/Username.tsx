@@ -41,7 +41,7 @@ const Username = () => {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="flex-grow mt-auto max-h-[700px] rounded-3xl bg-black py-7 px-4">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="flex-grow mt-auto max-h-[700px] md:max-h-[500px] rounded-3xl bg-black py-7 px-4">
                 <FormField
                     control={form.control}
                     name="username"

@@ -13,12 +13,13 @@ const Dashboard = () => {
         <main className='container pt-32 pb-10'>
             <Header />
             <Status />
+            <h3 className="font-semibold mb-2 mt-7 text-base">Overview</h3>
             <Overview
                 rank={10}
                 referrals={16}
                 users={100}
                 referralCode={"gzrhjtw5"} />
-            <div className="my-8">
+            <div className="my-10">
                 <Link
                     href={"/dashboard/referral"}
                     className="referral-container"
