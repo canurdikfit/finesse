@@ -36,9 +36,9 @@ const Authentication = ({ login }: any) => {
         // ✅ This will be type-safe and validated.
         console.log(values)
         if (values.password) {
-            router.push('/dashboard', { scroll: false })
+            router.push('/dashboard')
         } else {
-            router.push('/authentication/otp', { scroll: false })
+            router.push('/authentication/otp')
         }
 
     }

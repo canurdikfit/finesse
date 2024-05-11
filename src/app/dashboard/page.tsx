@@ -9,7 +9,7 @@ import PlannedTask from '@/components/dashboard/PlannedTask'
 
 const Dashboard = () => {
     return (
-        <main className='container pt-20 pb-10 large-screen'>
+        <main className='container pt-20 pb-10'>
             <Header />
             <Status />
             <Overview

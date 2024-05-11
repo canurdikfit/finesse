@@ -1,9 +1,9 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { Plus_Jakarta_Sans as FontSans } from "next/font/google"
-import type { Metadata } from "next";
 import "./globals.css";
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster";
+
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -24,8 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-           <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=0" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=0" />
       </head>
+
       <body className={cn(
         "min-h-screen background font-sans antialiased",
         fontSans.variable
@@ -36,7 +37,8 @@ export default function RootLayout({
       >
           {children}
           <Toaster />
-        </ThemeProvider></body>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

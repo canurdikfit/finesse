@@ -115,6 +115,7 @@ const Events = () => {
                                                     >
                                                         <div className="flex gap-3 items-center">
                                                             <div className="icon-container">
+                                                                {/* Can be replaced with an image tag if image is to be rendered instead */}
                                                                 {tasks.type == "website" && <BsGlobe />}
                                                                 {tasks.type == "invite" && <HiMiniUserGroup />}
                                                                 {tasks.type == "twitter" && <FaXTwitter />}

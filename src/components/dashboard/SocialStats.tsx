@@ -4,7 +4,6 @@ type SocialInfo = {
     earned: number
     claimed: number
     referral: number
-    surf: number
     multiplier: number
 }
 
@@ -22,9 +21,6 @@ const SocialStats = (props: SocialInfo) => {
             <p className="text-[15px] font-bold">
                 Referral Xp:{" "}
                 <span className="dark:text-white text-black">{props.referral}</span>
-            </p>
-            <p className="text-[15px] font-bold">
-                Surf Xp: <span className="dark:text-white text-black"> {props.surf}</span>
             </p>
             <p className="text-[15px] font-bold">
                 Multiplier:{" "}

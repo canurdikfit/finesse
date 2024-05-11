@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Vector from '@/assets/Vector.svg'
 
 type TogglerSystem = {
     toggleru: boolean
@@ -11,7 +12,7 @@ const Multiplier = (props: TogglerSystem) => {
             {
                 multiSample.map((items, idx) => (
                     <div key={idx} className={`h-24 w-20 ${items.achieved ? ' ' : 'opacity-20'} relative object-contain text-[11px] shrink-0 flex items-center justify-center text-white`}>
-                        <Image src='/vector.svg' alt="multiplier" fill={true} sizes='100%'  />
+                        <Image src={Vector} alt="multiplier" fill={true} sizes='100%'  />
                         <div className='relative z-10 text-center font-semibold'>
                             <p>{items.value}</p>
                             <p>XP</p>

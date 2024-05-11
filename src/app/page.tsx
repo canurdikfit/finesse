@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     // if the person is logining in for the first time it should check if its an existing user to push either to dashboard or login
     setTimeout(() => {
-      router.push('/authentication', { scroll: false })
+      router.push('/authentication')
     }, 2000)
   }, [])
   return (

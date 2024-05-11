@@ -40,7 +40,7 @@ const Status = () => {
                         earned={35545700}
                         claimed={35500000}
                         referral={500000}
-                        surf={45700}
+              
                         multiplier={10}
                     />
                 </TabsContent>

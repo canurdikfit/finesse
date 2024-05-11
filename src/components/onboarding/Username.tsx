@@ -36,7 +36,7 @@ const Username = () => {
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
         console.log(values)
-        router.push('/dashboard', { scroll: false })
+        router.push('/dashboard')
     }
 
     return (

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../ui/button'
+import { BiCoinStack } from 'react-icons/bi'
 
 type Mining = {
     mined: number
@@ -21,8 +22,8 @@ const MiningStats = (props: Mining) => {
                 <div className="tag">
                     Mining rate : <span>{props.rate} FOUND/hr</span>
                 </div>
-                <Button className="tag">
-                    Claim {props.mined} $FOUND
+                <Button className="tag gap-2">
+                    Start Mining <BiCoinStack className="shrink-0" />
                 </Button>
             </div>
         </div>)

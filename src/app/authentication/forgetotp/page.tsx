@@ -41,7 +41,7 @@ const ForgetOtp = () => {
   function onSubmit(data: z.infer<typeof FormSchema>) {
     console.log(data)
     if (data.pin.length === 6) {
-      router.push('/authentication/resetpassword', { scroll: false })
+      router.push('/authentication/resetpassword')
     }
   }
 

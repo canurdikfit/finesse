@@ -45,7 +45,7 @@ const Forgetmail = () => {
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
         console.log(values)
-        router.push('/authentication/forgetotp', { scroll: false })
+        router.push('/authentication/forgetotp')
     }
 
     return (

@@ -41,7 +41,7 @@ const OtpAuth = () => {
     function onSubmit(data: z.infer<typeof FormSchema>) {
         console.log(data)
         if (data.pin.length === 6) {
-            router.push('/authentication/password', { scroll: false })
+            router.push('/authentication/password')
         }
     }
 
