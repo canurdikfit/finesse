@@ -3,6 +3,8 @@ import { Plus_Jakarta_Sans as FontSans } from "next/font/google"
 import "./globals.css";
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster";
+import type { Viewport } from 'next'
+
 
 
 const fontSans = FontSans({
@@ -16,6 +18,13 @@ export const metadata = {
     "Foundation is designed to usher newcomers into the dynamic world of Web3. With an emphasis on web3 education, practical experience and Campaigns",
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 0.8,
+  maximumScale: 0.8,
+  userScalable: false,
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,7 +32,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-
       <body className={cn(
         "min-h-screen background font-sans antialiased",
         fontSans.variable
