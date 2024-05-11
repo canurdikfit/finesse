@@ -61,8 +61,8 @@ const TwitterProfile = () => {
         <div className={`twitter-auth ${auth ? 'flex' : 'hidden'}`}>
             <div className="twitter-container">
                 <div className="flex items-center justify-center">
-                    {connected ? <Image height={45} width={45} src='/user.png' alt="Twitter-image" />
-                        : <div className="p-3 rounded-lg bg-black"><FaXTwitter className="text-white text-xl" /></div>
+                    {connected ? <Image height={60} width={60} src='/user.png' alt="Twitter-image" />
+                        : <div className="p-3 rounded-lg bg-black"><FaXTwitter className="text-white text-4xl" /></div>
                     }
                 </div>
                 <Dialog>
@@ -79,7 +79,7 @@ const TwitterProfile = () => {
                             {connected ? 'Continue' : 'Connect X'}
                         </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-sm mx-auto z-[999] background rounded-xl border-background dark:border-background-dark text-black dark:text-white">
+                    <DialogContent className="max-w-md mx-auto z-[999] background rounded-xl border-background dark:border-background-dark text-black dark:text-white">
                         <Form {...form}>
                             <form onSubmit={form.handleSubmit(onSubmit)} className=" space-y-3">
                                 <FormField

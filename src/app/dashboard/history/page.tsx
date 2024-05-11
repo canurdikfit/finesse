@@ -5,10 +5,10 @@ import { IoTelescopeOutline } from "react-icons/io5";
 
 const History = () => {
     return (
-        <main className='pt-20 large-screen'>
+        <main className='pt-32'>
             <ReturnHeader page='history' push='/dashboard' />
             <div className='history-content'>
-                <h4 className='mb-4'>Today</h4>
+                <h4 className='mb-4 text-lg'>Today</h4>
                 <ul className='space-y-2'>
                     {historyActivities.map((history, i) => (
                         <li className="history-event">
@@ -23,9 +23,9 @@ const History = () => {
                                     {history.type == "referral" && <BiRedo />}
                                     {history.type == "leaderboard" && <IoTelescopeOutline />}
                                 </div>
-                                <div className="max-w-48">
-                                    <h3 className="text-sm font-medium">{history.activity}</h3>
-                                    <span className="text-xs text-[#989898]">
+                                <div className="max-w-64">
+                                    <h3 className="text-lg font-medium">{history.activity}</h3>
+                                    <span className="text-base text-[#989898]">
                                         {new Date().toLocaleDateString("en-US", {
                                             //   hour: "2-digit",
                                             //   minute: "2-digit",
@@ -35,7 +35,7 @@ const History = () => {
                                 </div>
                             </div>
                             {history.type == "referral" && (
-                                <h3 className="text-sm font-semibold">{history.value} XP</h3>
+                                <h3 className="text-lg font-semibold">{history.value} XP</h3>
                             )}
                         </li>
                     ))}

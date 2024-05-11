@@ -31,13 +31,14 @@ const WelcomeScreens = (props: WelcomeSystem) => {
                 <div className='carousel-container'>
                     <div className="carousel-container-shell">
                         <div
-                            className={`carousel-container-img ${props.index == 0 && "h-[240px]"
-                                } ${props.index == 1 && "h-[200px]"} ${props.index == 2 && "h-[180px]"}`}
+                            className={`carousel-container-img ${props.index == 0 && "h-[340px]"
+                                } ${props.index == 1 && "h-[300px]"} ${props.index == 2 && "h-[280px]"}`}
                         >
                             <Image src={props.icon} sizes="100%" fill={true} alt="icon" />
                         </div>
                         <div className="flex relative justify-end">
                             <div className="flex w-full gap-2 items-center justify-center absolute h-full z-0">
+
                                 <span
                                     className={`carousel-container-pagination ${props.index == 0 ? "bg-white" : "bg-[#767676]"
                                         }`}

@@ -12,7 +12,7 @@ type Mining = {
 const MiningStats = (props: Mining) => {
     return (
         <div className="mining-stats">
-            <h3>
+            <h3 className='text-lg'>
                 $FOUND Mined:{" "}
                 <span>{props.mined}</span>
             </h3>

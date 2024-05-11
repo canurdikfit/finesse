@@ -10,10 +10,10 @@ type NavSystem = {
 const ReturnHeader = (props: NavSystem) => {
     return (
         <div className="return-header">
-            <Link href={props.push} className="text-xl">
+            <Link href={props.push} className="text-3xl">
                 <FaArrowLeftLong />
             </Link>
-            <p className="font-semibold capitalize text-lg">{props.page}</p>
+            <p className="font-semibold capitalize text-2xl">{props.page}</p>
         </div>
     )
 }

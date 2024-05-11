@@ -97,8 +97,10 @@ const Password = () => {
                     />
 
                     <div>
-                        <h5 className='text-sm font-semibold mb-1'>Password must include:</h5>
-                        <ul className='list-disc text-xs text-[#989898] ml-3 space-y-1'>
+                        <h5 className="text-lg font-semibold mb-1">
+                            Password must include:
+                        </h5>
+                        <ul className="list-disc text-base text-[#989898] ml-3 space-y-1">
                             <li>Uppercase characters</li>
                             <li>Lowercase characters</li>
                             <li>Integers</li>

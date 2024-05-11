@@ -54,7 +54,7 @@ const Events = () => {
                                                 {items.completed && <FaCircleCheck />}
                                             </div>
                                             <div className="text-left">
-                                                <h4 className="text-base font-semibold">{items.name}</h4>
+                                                <h4 className="text-xl font-semibold">{items.name}</h4>
                                             </div>
                                         </div>
                                         <div>
@@ -63,7 +63,7 @@ const Events = () => {
                                             )}
                                         </div>      </div>
                                     <div className="text-left">
-                                        <p className="text-xs inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
+                                        <p className="text-base inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
                                             {items.completed ? (
                                                 "Completed"
                                             ) : (
@@ -90,8 +90,8 @@ const Events = () => {
                                         )}
 
                                         <DrawerDescription className="text-black dark:text-white flex items-center justify-between pt-2">
-                                            <h2 className="font-semibold text-base">Enetecosystem</h2>{" "}
-                                            <span className="text-sm text-[#989898]">
+                                            <h2 className="font-semibold text-xl">Enetecosystem</h2>{" "}
+                                            <span className="text-base text-[#989898]">
                                                 Reward: {items?.details?.reward} XP
                                             </span>
                                         </DrawerDescription>
@@ -125,12 +125,12 @@ const Events = () => {
                                                                 )}
                                                             </div>
                                                             <div>
-                                                                <h4 className="text-base font-semibold">
+                                                                <h4 className="text-lg font-semibold">
                                                                     {tasks.task}
                                                                 </h4>
                                                             </div>
                                                         </div>
-                                                        <div className="text-xl">
+                                                        <div className="text-2xl">
                                                             {!tasks.completed ? (
                                                                 <IoIosArrowForward className="text-black dark:text-white" />
                                                             ) : (

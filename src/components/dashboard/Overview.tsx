@@ -20,10 +20,10 @@ const Overview = (props: OverviewContent) => {
     return (
         <div className="overview-container">
             <div className="flex items-center justify-between">
-                <div className="bg-white/15 text-white p-2 rounded-md">
+                <div className="bg-white/15 text-xl text-white p-2 rounded-md">
                     <FaTrophy />
                 </div>
-                <Link href='/dashboard/leaderboard'> <div className="flex items-center gap-2 text-[#ABABAB] font-semibold">
+                <Link href='/dashboard/leaderboard'> <div className="flex items-center gap-2 text-[#ABABAB] text-xl font-semibold">
                     <HiMiniUserGroup />
                     {props.users}
                 </div></Link>
@@ -31,12 +31,12 @@ const Overview = (props: OverviewContent) => {
             <div className="px-10 mt-2 h-full flex flex-col">
                 <div className="grid grid-cols-2">
                     <div>
-                        <span className="text-[#ABABAB] text-base">Referrals</span>
-                        <h2 className="text-white mt-1">{props.referrals}</h2>
+                        <span className="text-[#ABABAB] text-lg">Referrals</span>
+                        <h2 className="text-white mt-1 text-4xl">{props.referrals}</h2>
                     </div>
                     <div>
-                        <span className="text-[#ABABAB] text-base">Global Rank</span>
-                        <h2 className="text-white mt-1">{props.rank}</h2>
+                        <span className="text-[#ABABAB] text-lg">Global Rank</span>
+                        <h2 className="text-white mt-1 text-4xl">{props.rank}</h2>
                     </div>
                 </div>
                 <CopyToClipboard
@@ -48,7 +48,7 @@ const Overview = (props: OverviewContent) => {
                         });
                     }}
                 >
-                    <button className="mt-auto flex items-center gap-1 text-left text-white text-sm">
+                    <button className="mt-auto flex items-center gap-1 text-left text-white text-base">
                         <span className="shrink-0">Referral Code:</span> {props.referralCode}{" "}
                         <BsCopy />
                     </button>

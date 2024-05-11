@@ -21,14 +21,14 @@ const ShareLink = () => {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Button className="py-2.5 px-6 rounded-lg bg-black dark:bg-primary-dark flex items-center gap-2 text-white"><BiRedo />
+                <Button className="px-6 h-fit py-4 rounded-lg bg-black dark:bg-primary-dark flex text-lg items-center gap-2 text-white"><BiRedo />
                     <span>Share link</span></Button>
             </DialogTrigger>
-            <DialogContent className="max-w-sm py-10 ring-0 border-0 rounded-xl background">
+            <DialogContent className="max-w-md py-10 ring-0 border-0 rounded-xl background">
 
                 <DialogHeader>
-                    <DialogTitle>Share link</DialogTitle>
-                    <DialogDescription>
+                    <DialogTitle className="text-lg">Share link</DialogTitle>
+                    <DialogDescription className="text-base">
                         Anyone who has this link will be able to view this.
                     </DialogDescription>
                 </DialogHeader>

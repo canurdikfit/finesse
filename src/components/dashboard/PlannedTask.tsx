@@ -39,7 +39,7 @@ const PlannedTask = () => {
                         Boosts
                     </TabsTrigger>
                 </TabsList>
-                <Button className='w-fit mx-auto flex items-center gap-2' onClick={() => setMultiplier(!multiplier)}>Multiplier <FaChevronUp className={`transition-all ${multiplier && 'rotate-180'} ease-linear duration-300`}/></Button>
+                <Button className='w-fit mx-auto flex items-center gap-2 text-lg py-4 h-fit' onClick={() => setMultiplier(!multiplier)}>Multiplier <FaChevronUp className={`transition-all ${multiplier && 'rotate-180'} ease-linear duration-300`}/></Button>
             </div>
             <Multiplier toggleru={multiplier}/>
             <TabsContent

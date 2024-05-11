@@ -10,9 +10,9 @@ import { useState } from "react";
 export default function Home() {
   const [login, setLogin] = useState<HTMLButtonElement | boolean>(false)
   return (
-    <main>
+    <main className="flex flex-col">
       <div className="banner">
-        <Image src='/foundation.svg' alt="Logo" height={160} width={160} priority className="invert dark:invert-0" />
+        <Image src='/foundation.svg' alt="Logo" height={180} width={180} priority className="invert dark:invert-0" />
         <h1>Welcome to Foundation</h1>
         <p className="uppercase tracking-[5px]">the web3 standard </p>
       </div>
@@ -23,7 +23,7 @@ export default function Home() {
       {
         !login ?
           <div className="text-center space-y-5 my-5">
-            <span className="text-sm text-[#6A6A6A]">Or continue with</span>
+            <span className="text-lg text-[#6A6A6A]">Or continue with</span>
             <div className="flex items-center justify-center gap-4">
 
               {/* Apple Authentication */}
@@ -36,15 +36,15 @@ export default function Home() {
 
           </div> :
           <div className="my-5 text-center">
-            <Link href='/authentication/forgetmail' className="text-sm underline underline-offset-3">Forget Password?</Link>
+            <Link href='/authentication/forgetmail' className="text-lg underline underline-offset-3">Forget Password?</Link>
           </div>
       }
       <div className="text-center">
-        <p className="text-xs text-[#6A6A6A]">{login ? "Don't have an Account?" : "Have an Account?"}
-          <Button onClick={() => setLogin(!login)} className="link-colour p-1">{login ? "Sign Up" : "Log In"}</Button>
+        <p className="text-lg text-[#6A6A6A]">{login ? "Don't have an Account?" : "Have an Account?"}
+          <Button onClick={() => setLogin(!login)} className="link-colour text-lg p-1 pl-2">{login ? "Sign Up" : "Log In"}</Button>
         </p>
       </div>
-      <div className="mt-10 pb-7 text-sm text-black dark:text-white">
+      <div className="pt-10 mt-auto pb-10 text-lg text-black dark:text-white">
         <center>
           By continuing, you agree to our
 

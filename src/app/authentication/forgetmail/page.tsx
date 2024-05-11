@@ -54,15 +54,15 @@ const Forgetmail = () => {
                 <form onSubmit={form.handleSubmit(onSubmit)}
                     className='h-screen flex flex-col gap-5 pt-5 pb-10'>
                     <div>
-                        <legend className='font-semibold text-lg py-3'>Forgot password?</legend>
-                        <p className=''>An OTP will be sent to your E-mail address</p>
+                        <legend className='font-semibold text-2xl py-3'>Forgot password?</legend>
+                        <p className='opacity-70 font-medium'>An OTP will be sent to your E-mail address</p>
                     </div>
                     <FormField
                         control={form.control}
                         name="email"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Input Email Address</FormLabel>
+                                <FormLabel className='text-lg'>Input Email Address</FormLabel>
                                 <div className="relative">
                                     <FormControl>
                                         <Input className='auth_input' placeholder='Email' type='email'

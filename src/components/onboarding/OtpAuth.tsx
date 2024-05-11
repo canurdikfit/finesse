@@ -47,7 +47,7 @@ const OtpAuth = () => {
 
     return (
         <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="max-w-[350px] mx-auto flex-grow w-full">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="login-res-screen mx-auto flex-grow w-full">
                 <FormField
                     control={form.control}
                     name="pin"

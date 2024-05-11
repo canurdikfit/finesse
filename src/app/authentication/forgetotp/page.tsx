@@ -46,20 +46,20 @@ const ForgetOtp = () => {
   }
 
   return (
-    <main className='container max-w-md mx-auto'>
+    <main className='container login-res-screen mx-auto'>
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className='h-screen flex flex-col gap-5 pt-5 pb-10'>
         <div>
-          <legend className='font-semibold text-lg py-3 mb-3'>Forgot password?</legend>
+          <legend className='font-semibold text-2xl py-3 mb-3'>Forgot password?</legend>
         </div>
         <FormField
           control={form.control}
           name="pin"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Input code</FormLabel>
+              <FormLabel className='text-lg'>Input code</FormLabel>
               <FormControl>
-                <InputOTP maxLength={6} {...field}>
+                <InputOTP className='text-xl' maxLength={6} {...field}>
                   <InputOTPGroup className="flex w-full justify-between">
                     <InputOTPSlot className='input-otp-slot' index={0} />
                     <InputOTPSlot className='input-otp-slot' index={1} />

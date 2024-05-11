@@ -17,10 +17,10 @@ const TrackPositions = () => {
                                         } ${idx == 1 && "w-[55%] bg-[#5F37E6]"} ${idx == 2 && "bg-black w-[45%]"} p-2 pl-3 rounded-r-3xl`}
                                 >
                                     <div className="flex items-center">
-                                        <span className="font-bold text-sm text-white flex items-center gap-2">
+                                        <span className="font-bold text-base text-white flex items-center gap-2">
                                             <FaCrown className={`text-base ${idx == 0 && 'text-[#F79E1B]'} ${idx == 1 && 'text-[#C0C0C0]'} ${idx == 2 && 'text-[#9c6630]'}`} />
                                         </span>
-                                        <span className="ml-3 font-semibold text-sm text-white">
+                                        <span className="ml-3 font-semibold text-lg text-white">
                                             {Number(ranking.rank).toLocaleString("en-US")}
                                         </span>
 
@@ -34,10 +34,10 @@ const TrackPositions = () => {
                                     />
                                 </div>
                                 <div>
-                                    <h2 className="text-sm font-semibold">
+                                    <h2 className="text-lg font-semibold">
                                         {ranking.title}
                                     </h2>
-                                    <p className="text-[#767676] text-xs">
+                                    <p className="text-[#767676] text-base">
                                         {Number(ranking.value).toLocaleString("en-US")} XP
                                     </p>
                                 </div>
@@ -64,21 +64,21 @@ const TrackPositions = () => {
                                         className="rounded-full border-2 border-white "
                                     />
                                     <div>
-                                        <h2 className="text-black dark:text-white font-semibold mb-1 text-sm">
+                                        <h2 className="text-black dark:text-white font-semibold mb-1 text-lg">
                                             @{ranking.title}
                                         </h2>
-                                        <span className="font-bold text-xs px-2 py-1 rounded-md bg-primary dark:bg-primary-dark text-black dark:text-white">
+                                        <span className="font-bold text-base px-2 py-1 rounded-md bg-primary dark:bg-primary-dark text-black dark:text-white">
                                             {" "}
                                             {idx + 1}
                                         </span>
                                     </div>
                                 </div>
                                 <div className="text-end">
-                                    <h4 className="font-bold text-sm">
+                                    <h4 className="font-bold text-lg">
                                         {" "}
                                         {Number(ranking.rank).toLocaleString("en-US")}
                                     </h4>
-                                    <p className="text-[#767676] text-xs">
+                                    <p className="text-[#767676] text-base">
                                         {Number(ranking.value).toLocaleString("en-US")} XP
                                     </p>
                                 </div>

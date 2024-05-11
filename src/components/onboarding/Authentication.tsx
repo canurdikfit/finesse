@@ -45,7 +45,7 @@ const Authentication = ({ login }: any) => {
 
 
     return (
-        <div className='container max-w-sm'>
+        <div className='container md:max-w-md'>
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)}>
                     <FormField

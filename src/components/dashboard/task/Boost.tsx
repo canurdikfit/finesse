@@ -40,8 +40,8 @@ const Boost = () => {
                                         {items.completed && <FaCircleCheck />}
                                     </div>
                                     <div className="text-left space-y-2">
-                                        <h4 className="text-base font-semibold">{items.name}</h4>
-                                        <p className="text-xs inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
+                                        <h4 className="text-xl font-semibold">{items.name}</h4>
+                                        <p className="text-base inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
 
                                             <span>+{items.reward} XP</span>
 
@@ -50,7 +50,7 @@ const Boost = () => {
                                 </div>
                                 <div>
                                     {items.type == 'bot' && (
-                                        <p className="text-base font-semibold">0/10</p>
+                                        <p className="text-lg font-semibold">0/10</p>
                                     )}
                                 </div>      </div>
                             <div className="text-left">

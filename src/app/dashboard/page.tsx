@@ -10,7 +10,7 @@ import ClaimXP from '@/components/dashboard/task/ClaimXP'
 
 const Dashboard = () => {
     return (
-        <main className='container pt-20 pb-10'>
+        <main className='container pt-32 pb-10'>
             <Header />
             <Status />
             <Overview
@@ -24,11 +24,11 @@ const Dashboard = () => {
                     className="referral-container"
                 >
                     <div className="bg-[#f5f5f5] dark:bg-[#23262D] p-3 rounded-lg">
-                        <HiMiniUserGroup className="text-2xl text-black dark:text-white" />
+                        <HiMiniUserGroup className="text-4xl text-black dark:text-white" />
                     </div>
                     <div>
                         <h3>Invite Friends</h3>
-                        <p className="text-[10px] text-[#989898]">
+                        <p className="text-sm text-[#989898]">
                             The more users you refer , the more $FOUND you earn
                         </p>
                     </div>

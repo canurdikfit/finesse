@@ -43,7 +43,7 @@ const Tasks = () => {
                                             {items.completed && <FaCircleCheck />}
                                         </div>
                                         <div>
-                                            <h4 className="text-base font-semibold">{items.name}</h4>
+                                            <h4 className="text-xl font-semibold">{items.name}</h4>
                                         </div>
                                     </div>
                                     <div>
@@ -52,7 +52,7 @@ const Tasks = () => {
                                         )}
                                     </div>
                                 </div>
-                                <p className="text-xs inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
+                                <p className="text-base inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
                                     {items.completed ? (
                                         "Completed"
                                     ) : (
