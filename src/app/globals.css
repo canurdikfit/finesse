@@ -144,7 +144,7 @@ header {
 }
 
 .drop-down-content {
-  @apply foreground border-primary dark:border-primary-dark w-56 mr-5 py-4 px-3 rounded-2xl space-y-2 max-h-[500px] h-full justify-between flex flex-col overflow-y-scroll;
+  @apply foreground border-primary dark:border-primary-dark w-56 mr-5 py-4 px-3 rounded-2xl space-y-2 max-h-[700px] h-full justify-between flex flex-col overflow-y-scroll;
 }
 
 .drop-down-item {
