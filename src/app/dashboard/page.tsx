@@ -6,6 +6,7 @@ import React from 'react'
 import { HiMiniUserGroup } from 'react-icons/hi2'
 import TwitterProfile from '@/components/dashboard/TwitterProfile';
 import PlannedTask from '@/components/dashboard/PlannedTask'
+import ClaimXP from '@/components/dashboard/task/ClaimXP'
 
 const Dashboard = () => {
     return (
@@ -35,6 +36,7 @@ const Dashboard = () => {
             </div>
             <PlannedTask />
             <TwitterProfile />
+            <ClaimXP />
         </main>
     )
 }

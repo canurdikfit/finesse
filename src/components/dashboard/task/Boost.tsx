@@ -74,8 +74,6 @@ const ecosystemTaskList = [
         link: "/",
         type: "bot",
         completed: false,
-        
-
     },
     {
         name: "Follow On X(Twitter)",

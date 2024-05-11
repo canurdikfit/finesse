@@ -21,6 +21,7 @@ export default function Home() {
         <div className="relative shrink-0 object-contain h-10 w-52"><Image src='/foundation-text.png' alt="Logo" fill={true} sizes='100%' className="dark:invert invert-0" /></div>
       </div>
       <div className="relative shrink-0 object-contain h-10 w-24 justify-self-end"><Image src='/powered.png' alt="Logo" fill={true} sizes='100%' className="invert dark:invert-0" /></div>
+   
     </main >
   );
 }

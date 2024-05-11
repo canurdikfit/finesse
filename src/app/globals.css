@@ -116,10 +116,10 @@ form {
 }
 
 .tab-content {
-  /* background-image: url(../assets/spiral.svg);
+  background-image: url(../assets/spiral.svg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover; */
+  background-size: cover;
   @apply relative h-48 z-10 -top-1.5 rounded-b-2xl rounded-t-none bg-primary dark:bg-primary-dark container pt-6 pb-3;
 }
 
