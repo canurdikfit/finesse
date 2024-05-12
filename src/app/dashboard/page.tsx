@@ -29,7 +29,7 @@ const Dashboard = () => {
                     </div>
                     <div>
                         <h3>Invite Friends</h3>
-                        <p className="text-sm text-[#989898]">
+                        <p className="text-base text-[#989898]">
                             The more users you refer , the more $FOUND you earn
                         </p>
                     </div>

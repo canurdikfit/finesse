@@ -8,11 +8,11 @@ import { IoIosArrowForward } from "react-icons/io";
 const Tasks = () => {
     return (
         <div>
-            <h5 className="text-center font-semibold text-sm mb-8">
+            <h5 className="text-center font-semibold text-lg mb-8 mt-6">
                 Simple task for more Xp`s
             </h5>
             {ecosystemTaskList[0].name ? (
-                <ul className="grid gap-2 ">
+                <ul className="grid gap-4 ">
                     {ecosystemTaskList.map((items, ki) => (
                         <li key={ki} className="task-list">
                             <Link
@@ -43,16 +43,17 @@ const Tasks = () => {
                                             {items.completed && <FaCircleCheck />}
                                         </div>
                                         <div>
-                                            <h4 className="text-xl font-semibold">{items.name}</h4>
+                                            <h4 className="text-[22px] font-semibold">{items.name}</h4>
                                         </div>
                                     </div>
                                     <div>
                                         {!items.completed && (
-                                            <IoIosArrowForward className="text-black dark:text-white" />
+                                            <IoIosArrowForward className="text-black text-xl dark:text-white" />
                                         )}
                                     </div>
                                 </div>
-                                <p className="text-base inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
+                                
+                                <p className="text-lg inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
                                     {items.completed ? (
                                         "Completed"
                                     ) : (

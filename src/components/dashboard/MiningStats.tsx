@@ -20,7 +20,7 @@ const MiningStats = (props: Mining) => {
             <p>{props.time}</p>
             <div>
                 <div className="tag">
-                    Mining rate : <span>{props.rate} FOUND/hr</span>
+                    Mining rate : <span className='font-normal'>{props.rate} FOUND/hr</span>
                 </div>
                 <Button className="tag gap-2">
                     Start Mining <BiCoinStack className="shrink-0" />

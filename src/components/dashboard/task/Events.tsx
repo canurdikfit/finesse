@@ -22,7 +22,7 @@ import TaskCompleted from "../TaskCompleted";
 const Events = () => {
     return (
         <div>
-            <ul className="grid gap-2">
+            <ul className="grid gap-4">
                 {ecosystemTaskList.map((items, ki) => (
                     <li key={ki} className="task-list">
                         <Drawer>
@@ -54,16 +54,16 @@ const Events = () => {
                                                 {items.completed && <FaCircleCheck />}
                                             </div>
                                             <div className="text-left">
-                                                <h4 className="text-xl font-semibold">{items.name}</h4>
+                                                <h4 className="text-[22px] font-semibold">{items.name}</h4>
                                             </div>
                                         </div>
                                         <div>
                                             {!items.completed && (
-                                                <IoIosArrowForward className="text-black dark:text-white" />
+                                                <IoIosArrowForward className="text-black text-xl dark:text-white" />
                                             )}
                                         </div>      </div>
                                     <div className="text-left">
-                                        <p className="text-base inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
+                                        <p className="text-lg inline-block rounded-full px-2 py-1 background text-[#767676] font-semibold">
                                             {items.completed ? (
                                                 "Completed"
                                             ) : (

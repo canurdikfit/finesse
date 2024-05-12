@@ -9,7 +9,7 @@ import Image from "next/image";
 const Boost = () => {
     return (
         <div>
-            <ul className="grid gap-2">
+            <ul className="grid gap-4">
                 {ecosystemTaskList.map((items, ki) => (
                     <li key={ki} className="bg-white dark:bg-primary-dark rounded-xl">
                         <button
@@ -26,7 +26,7 @@ const Boost = () => {
                                     <div className={`boost-icon-container ${items.type == "bot" ? '' : 'border-[1.5px]'}`}>
                                         {/* Can be replaced with an image tag if image is to be rendered instead */}
                                         {items.type == "bot" && !items.completed && (
-                                            <Image src={BotHead} height={40} width={40} alt="bot" />
+                                            <Image src={BotHead} height={60} width={60} alt="bot" />
                                         )}
                                         {items.type == "twitter" && !items.completed && (
                                             <FaXTwitter />

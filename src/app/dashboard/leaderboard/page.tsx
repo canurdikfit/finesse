@@ -5,16 +5,15 @@ import React from 'react'
 
 const Leaderboard = () => {
     return (
-        <main className='py-32'>
+        <main className='pt-28 pb-36'>
             <ReturnHeader page='leaderboard' push='/dashboard' />
             <div className="container">
                 <div className="leader-banner">
                     <div className="header-container-img">
                         <Image src='/profile.png' height={35} width={35} alt="profile" />
                     </div>
-                    <h3 className="font-normal text-base">
-                        You are doing better than 80% of <br />
-                        others
+                    <h3 className="font-normal text-lg">
+                        You are doing better than 80% of others
                     </h3>
                 </div>
             </div>

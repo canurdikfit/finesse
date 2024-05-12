@@ -132,7 +132,7 @@ form {
 }
 
 .mining-stats .tag {
-  @apply w-full p-3 px-4 text-wrap rounded-lg bg-black text-white text-xs h-fit md:py-3;
+  @apply w-full p-3 px-4 text-wrap rounded-lg bg-black text-white font-medium text-xs h-fit md:py-3;
 }
 
 header {
@@ -172,7 +172,7 @@ header {
 }
 
 .leader-banner {
-  @apply flex items-center gap-4 foreground p-2 rounded-xl;
+  @apply flex items-center gap-4 foreground p-4 rounded-xl;
 }
 
 .other-positions {
@@ -195,7 +195,7 @@ header {
 }
 
 .tasktab-container-tabcontroller-tab {
-  @apply rounded-xl font-semibold text-[#ABABAB] dark:text-[#ABABAB] text-lg gap-1;
+  @apply rounded-xl font-semibold text-[#ABABAB] dark:text-[#ABABAB] py-4 text-lg gap-1;
 }
 
 .tasktab-container-content {
@@ -231,11 +231,11 @@ header {
 }
 
 .personal-container {
-  @apply fixed bottom-5 bg-primary dark:bg-primary-dark inset-x-5 md:inset-x-10 lg:inset-x-20 p-2 max-h-20 h-full flex items-center justify-between rounded-xl text-xs text-black dark:text-white font-semibold;
+  @apply fixed bottom-5 bg-primary dark:bg-primary-dark inset-x-5 md:inset-x-10 lg:inset-x-20 p-4 max-h-28 h-full flex items-center justify-between rounded-xl text-xs text-black dark:text-white font-semibold;
 }
 
 .personal-container h3 {
-  @apply text-base;
+  @apply text-[17px];
 }
 
 .connect-wallet {
