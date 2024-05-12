@@ -28,8 +28,8 @@ const TrackPositions = () => {
                                     <Image
                                         src='/user.png'
                                         alt='profile'
-                                        width={45}
-                                        height={45}
+                                        width={50}
+                                        height={50}
                                         className="rounded-full border-2 border-white "
                                     />
                                 </div>
@@ -59,8 +59,8 @@ const TrackPositions = () => {
                                     <Image
                                         src='/user.png'
                                         alt='profile'
-                                        width={45}
-                                        height={45}
+                                        width={50}
+                                        height={50}
                                         className="rounded-full border-2 border-white "
                                     />
                                     <div>
