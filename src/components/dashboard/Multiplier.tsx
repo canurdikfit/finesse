@@ -16,7 +16,7 @@ const Multiplier = (props: TogglerSystem) => {
                         <div className='relative z-10 text-center font-semibold'>
                             <p>{items.value}</p>
                             <p>XP</p>
-                            <span className='text-[10px] text-[#18EAFF]'>+{items.percent}%</span>
+                            <span className='text-sm text-[#18EAFF]'>+{items.percent}%</span>
                         </div>
                     </div>
                 ))

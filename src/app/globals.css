@@ -132,7 +132,7 @@ form {
 }
 
 .mining-stats .tag {
-  @apply w-full p-3 px-4 text-wrap rounded-lg bg-black text-white font-medium text-xs h-fit md:py-3;
+  @apply w-full p-3 px-4 text-wrap rounded-lg bg-black text-white font-medium text-sm h-fit md:py-3;
 }
 
 header {

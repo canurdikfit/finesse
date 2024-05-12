@@ -5,7 +5,7 @@ import { FaCrown } from 'react-icons/fa';
 const TrackPositions = () => {
     return (
         <>
-            <ul className="my-5  space-y-3">
+            <ul className="my-5  space-y-5">
                 {rankings.map(
                     (ranking, idx) =>
                         idx <= 2 && (
