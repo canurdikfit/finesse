@@ -120,7 +120,7 @@ form {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  @apply relative h-56 z-10 -top-1.5 rounded-b-2xl rounded-t-none bg-primary dark:bg-primary-dark container pt-6 pb-3;
+  @apply relative h-60 z-10 -top-1.5 rounded-b-2xl rounded-t-none bg-primary dark:bg-primary-dark w-full mx-auto px-2 max-w-[1400px] pt-6 pb-3;
 }
 
 .mining-stats {
@@ -132,7 +132,7 @@ form {
 }
 
 .mining-stats .tag {
-  @apply w-full p-3 px-4 text-wrap rounded-lg bg-black text-white font-medium text-sm h-fit md:py-3;
+  @apply w-full py-4 px-2 text-wrap rounded-lg bg-black text-white font-medium text-base h-fit;
 }
 
 header {
@@ -199,7 +199,7 @@ header {
 }
 
 .tasktab-container-content {
-  @apply rounded-2xl drop-shadow-sm min-h-[500px];
+  @apply rounded-2xl drop-shadow-sm min-h-[550px];
 }
 
 .link-colour {
